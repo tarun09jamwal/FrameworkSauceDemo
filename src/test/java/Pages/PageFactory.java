@@ -6,10 +6,10 @@ public class PageFactory {
     WebDriver driver;
     private LoginPage loginPage;
 
-    public PageFactory(WebDriver driver)
-    {
+    public PageFactory(WebDriver driver) {
         this.driver = driver;
     }
+
     public LoginPage getLoginPage() {
         if (loginPage == null) {
             loginPage = new LoginPage(driver);
